@@ -1,81 +1,112 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-image: url(./colorss.jpg);
-}
-.section {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(210, 0, 0, 0.2);
-  text-align: center;
-  width: 500px;
-}
-h1 {
-  font-weight: 700;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 2px 2px #ff6c6c;
-  animation: colorCycle 5s infinite alternate;
-}
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./colorss.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(210, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 2px 2px #ff6c6c;
+    animation: colorCycle 5s infinite alternate;
+  }
+  
+  h5 {
+    margin: 0px;
+    color: rgb(30, 128, 0);
+    font-weight: bold;
+  }
+  
+  @keyframes colorCycle {
+    0% { color: rgb(207, 3, 3); }
+    20% { color: darkred; }
+    40% { color: purple; }
+    60% { color: blue; }
+    80% { color: green; }
+    100% { color: orange; }
+  }
+  
+  #colorBox {
+    width: 100px;
+    height: 100px;
+    margin: 5px auto;
+    border: 2px solid black;
+  }
+  
+  .colorOptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .colorOption {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #gameStatus {
+    font-weight: bold;
+    margin: 10px;
+  }
+  
 
-h5 {
-  margin: 0px;
-  color: rgb(30, 128, 0);
-  font-weight: bold;
-}
-@keyframes colorCycle {
-  0% {
-    color: rgb(207, 3, 3);
+  #newGameButton {
+    height: 50px;
+    width: 80%;
+    max-width: 250px;
+    background-color: rgb(30, 128, 0);
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
-  20% {
-    color: darkred;
+  #newGameButton:hover {
+    background-color: rgb(20, 90, 0);
   }
-  40% {
-    color: purple;
-  }
-  60% {
-    color: blue;
-  }
-  80% {
-    color: green;
-  }
-  100% {
-    color: orange;
-  }
-}
+  
 
-#colorBox {
-  width: 100px;
-  height: 100px;
-  margin: 5px auto;
-  border: 2px solid black;
-}
-
-.colorOptions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px;
-}
-.colorOption {
-  width: 50px;
-  height: 50px;
-  border: none;
-  cursor: pointer;
-}
-#gameStatus {
-  font-weight: bold;
-  margin: 10px;
-}
-#newGameButton {
-  height: 60px;
-  width: 250px;
-  background-color: rgb(30, 128, 0);
-  font-size: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  border-radius: 10px;
-}
+  @media (max-width: 600px) {
+    .section {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    #newGameButton {
+      width: 100%;
+    }
+  
+    .colorOption {
+      width: 40px;
+      height: 40px;
+    }
+  
+    #colorBox {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
