@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+  <body>
+    <main class="section">
+      <div id="mainMenu">
+        <img src="./colorss.jpg" />
+        <h1>Color Guessing Game</h1>
+        <button id="newGameButton"><a href="game.html">New Game</a></button>
+
+        <button id="selectLevelBtn">Level</button>
+
+        <button id="rulesButton"><a href="rules.html">Game Rules</a></button>
+      </div>
+
+      <div id="levelPopup" class="popup">
+        <h2>Select a Level</h2>
+        <div id="levelButtons">
+          <button class="level-choice" data-level="1">Level 1</button>
+          <button class="level-choice" data-level="2">Level 2</button>
+          <button class="level-choice" data-level="3">Level 3</button>
+          <button class="level-choice" data-level="4">Level 4</button>
+          <button class="level-choice" data-level="5">Level 5</button>
+        </div>
+        <button id="closePopup">Cancel</button>
+      </div>
+    </main>
+    <script src="landing.js"></script>
+  </body>
+</html>

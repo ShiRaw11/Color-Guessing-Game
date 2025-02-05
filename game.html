@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Color Guessing Game</h1>
+
+      <div id="score-timer">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 10s</span>
+      </div>
+      <p id="won-message"></p>
+      <div id="game-card">
+        <div id="target-color" class="color-box"></div>
+
+        <div id="color-options" class="color-options"></div>
+      </div>
+
+      <div id="level-navigation">
+        <div>
+          <span id="level-info">Level: 1</span>
+        </div>
+        <button id="prevLevelBtn" class="level-btn">Previous Level</button>
+        <button id="nextLevelBtn" class="level-btn">Next Level</button>
+      </div>
+    </div>
+
+    <div id="game-over-popup" class="popup">
+      <p id="game-over-message"></p>
+      <button id="tryAgainBtn">Try Again</button>
+      <button id="cancelBtn">Cancel</button>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
