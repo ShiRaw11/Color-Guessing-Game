@@ -121,7 +121,7 @@ tryAgainBtn.addEventListener("click", () => {
 });
 
 cancelBtn.addEventListener("click", () => {
-  window.location.href = "landing.html";
+  window.location.href = "index.html";
 });
 
 startGame();
