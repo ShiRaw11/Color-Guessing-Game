@@ -27,6 +27,10 @@ const cancelBtn = document.getElementById("cancelBtn");
 const gameOverMessage = document.getElementById("game-over-message");
 const wonMessage = document.getElementById("won-message");
 
+document.getElementById("closeBtn").addEventListener("click", () => {
+  window.location.href = "index.html"; 
+});
+
 function startGame() {
   timer = 10;
   clearInterval(timerInterval);

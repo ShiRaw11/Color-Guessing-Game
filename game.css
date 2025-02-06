@@ -43,6 +43,7 @@ h1 {
   }
 }
 
+
 #game-container {
   text-align: center;
   margin-top: 20px;
@@ -54,6 +55,28 @@ h1 {
   box-shadow: 0 4px 8px rgba(210, 0, 0, 0.2);
   text-align: center;
   max-width: 500px;
+}
+#closeBtn{
+ 
+ font-size: 28px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin-left: 20px
+}
+
+.section{
+  display: flex;
+  align-items: flex-end; 
+  justify-content: space-around;
+}
+#close-btn i {
+  font-size: 28px;
+}
+
+#closeBtn:hover {
+  color: rgb(51, 169, 0);
 }
 
 #score-timer {
