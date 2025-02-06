@@ -214,3 +214,8 @@ button:hover {
     font-size: 1rem;
   }
 }
+.gameInstructions{
+  padding: 10px;
+  color: #5f9ea0;
+  font-family: "Press Start 2P", cursive;
+}

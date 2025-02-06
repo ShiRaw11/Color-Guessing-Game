@@ -16,7 +16,9 @@
 
      </div> 
       
-      
+     <p class="gameInstructions" data-testid="gameInstructions">
+      Guess the correct color before time runs out!
+    </p>
 
       <div id="score-timer">
         <span id="score">Score: 0</span>
@@ -24,8 +26,8 @@
       </div>
       <p id="won-message"></p>
       <div id="game-card">
-        <div id="target-color" class="color-box"></div>
-        <div id="color-options" class="color-options"></div>
+        <div id="target-color" class="color-box" data-testid ="colorBox"></div>
+        <div id="color-options" class="color-options" data-testid="colorOption"></div>
       </div>
 
       <div id="game-over-popup" class="popup">
