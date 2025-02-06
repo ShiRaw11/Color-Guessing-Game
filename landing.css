@@ -91,7 +91,7 @@ img {
   border-radius: 50%;
 }
 .popup {
-  display: none; /* Hide by default */
+  display: none; 
   position: fixed;
   top: 50%;
   left: 50%;
