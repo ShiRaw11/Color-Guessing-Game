@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Guessing Game</title>
     <link rel="stylesheet" href="game.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/jpg" href="./colorss.jpg">
   </head>
   <body>
     <div id="game-container">
-     <div class="section">
-      <h1>Color Guessing Game</h1>
-    <i id="closeBtn" class="fas fa-times"></i>
+      <div class="section">
+        <h1>Color Guessing Game</h1>
+        <i id="closeBtn" class="fas fa-times"></i>
+      </div>
 
-     </div> 
-      
-     <p class="gameInstructions" data-testid="gameInstructions">
-      Guess the correct color before time runs out!
-    </p>
+      <p class="gameInstructions" data-testid="gameInstructions">
+        Guess the correct color before time runs out!
+      </p>
 
       <div id="score-timer">
-        <span id="score">Score: 0</span>
+        <span data-testid="score" id="score">Score: 0</span>
         <span id="timer">Time: 10s</span>
       </div>
-      <p id="won-message"></p>
+      <p id="won-message" data-testid="gameStatus"></p>
       <div id="game-card">
-        <div id="target-color" class="color-box" data-testid ="colorBox"></div>
-        <div id="color-options" class="color-options" data-testid="colorOption"></div>
+        <div id="target-color" class="color-box" data-testid="colorBox"></div>
+        <div
+          id="color-options"
+          class="color-options"
+          data-testid="colorOption"
+        ></div>
       </div>
 
-      <div id="game-over-popup" class="popup">
+      <div id="game-over-popup" class="popup" data-testid="gameStatus">
         <p id="game-over-message"></p>
         <button id="tryAgainBtn">Try Again</button>
         <button id="cancelBtn">Cancel</button>

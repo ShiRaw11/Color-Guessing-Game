@@ -43,11 +43,10 @@ h1 {
   }
 }
 
-
 #game-container {
   text-align: center;
   margin-top: 20px;
-  padding :10px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #555;
   border-color: #000000;
@@ -56,19 +55,18 @@ h1 {
   text-align: center;
   max-width: 500px;
 }
-#closeBtn{
- 
- font-size: 28px;
+#closeBtn {
+  font-size: 28px;
   background: none;
   border: none;
   color: red;
   cursor: pointer;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
-.section{
+.section {
   display: flex;
-  align-items: flex-end; 
+  align-items: flex-end;
   justify-content: space-around;
 }
 #close-btn i {
@@ -154,7 +152,7 @@ h1 {
 }
 
 .popup {
-  display: none; 
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -214,7 +212,7 @@ button:hover {
     font-size: 1rem;
   }
 }
-.gameInstructions{
+.gameInstructions {
   padding: 10px;
   color: #5f9ea0;
   font-family: "Press Start 2P", cursive;
